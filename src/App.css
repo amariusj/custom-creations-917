@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+:root {
+  --mainRed: #e53d00;
+  --mainYellow: #ffe900;
+  --mainLightGreen: #cbff70;
+  --mainGreen: #21A0A0;
+  --mainDarkGreen: #046865;
+  --mainBlack: #212121;
+  --mainWhite: #E7EBD4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-lightGreen {
+  background-color: var(--mainLightGreen) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-darkGreen {
+  background-color: var(--mainDarkGreen);
 }
 
-.App-link {
-  color: #61dafb;
+.bg-green {
+  background-color: var(--mainGreen);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-yellow {
+  background-color: var(--mainYellow);
 }
+
+.bg-white {
+  background-color: var(--mainWhite) !important;
+}
+
+.text-white {
+  color: var(--mainWhite) !important;
+}
+
+.text-black {
+  color: var(--mainBlack) !important;
+}
+
+.title {
+  font-size: 2.5rem !important;
+}
+
+/* Navbar CSS */
+
+.my-navbar {
+  min-height: 8vh;
+  background-color: var(--mainYellow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.cart-button {
+  color: var(--mainRed);
+  background-color: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 20px;
+}
+
+.cart-icon {
+  z-index: 3;
+}
+
+.noStyle {
+  text-decoration: inherit;
+  color: inherit;
+  
+}
+
+/* End Navbar CSS */
+
+/* Jumbotron CSS */
+
+.my-jumbotron {
+  padding-top: 8vh;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/* End Jumbotron CSS */
+
+/* Product */
+
+.product-name, .product-price {
+  font-size: 1.45rem;
+}
+
+.bordered {
+  border: solid .5px var(--mainWhite);
+}
+
+/* End Product CSS */
+
+/* Cart */
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 21rem;
+  min-height: 90%;
+  transition: all .5s ease-in-out;
+  transform: translateX(100%);
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.details {
+  font-size: 16px;
+  color: var(--mainWhite);
+  font-weight: 400;
+}
+
+.quantity-container {
+  border-radius: 5px;
+  border: solid .5px grey
+}
+
+.quantity-number {
+  font-size: 12px;
+}
+
+.minus {
+  color: var(--mainRed) !important;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.plus {
+  color: var(--mainGreen) !important;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-container {
+  min-height: 5rem;
+}
+
+.pricing {
+  font-size: 14px !important;
+}
+
+.cart-close-icon {
+  font-size: 35px;
+}
+
+/* End Cart */
+
+/* Single Product */
+
+.product-container {
+  padding-top: 8vh;
+  min-height: 94.6vh;
+}
+
+.arrow {
+  color: var(--mainWhite) !important;
+  font-size: 1.75rem;
+}
+
+/* End Single Product */
+
+/*  Footer */
+
+.footer-text {
+  font-size: .75rem;
+}
+
+/* End Footer */
+
+/* Error page */
+
+.error {
+  height: 93vh;
+  background-color: var(--mainDarkGreen);
+}
+
+/* End Error page */
